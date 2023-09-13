@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <!-- Para alinear una imagen usar etiqueta div y dentro align -->
+            <div align="center">
+                <!-- Para ir a una imagen no desde index sino desde otra pagina siempre es ../ -->
+                <img src="../assets/media/images/CocinemosJuntos.jpg" alt="imagen cocinemos juntos" width="150px">
+            </div>
+            <h1 align="center">Cocinemos Juntos</h1>
+        </section>
+        <hr>
+    </header>
+    <main>
+<!-- FORMULARIO -->
+<!-- Etiqueta <form> y dentro etiqueta <fieldset> (fieldset seria como la etiqueta section pero para formularios)-->
+<!-- Metodo GET: es un formulario de validación de datos / Metodo POST: es un formulario de almacenamiento o actualización de datos -->
+<!-- POR SEGURIDAD. la linea común es: <form action="" method="post" class="form-exmple"> sin embargo por SEGURIDAD se borra METHOD -->
+<!-- <label for= "name" ESTA RELACIONADO CON <input id="name" -->
+<form>
+<fieldset>
+    <h2> Este es un formulario de contacto</h2>
+<legend> 
+    <h1> ESCRIBINOS <img src= "../assets/media/icons/Formulario_de_Contacto.ico" alt= "icono de escribir" width= "60px" >
+    </h1>
+    </legend>
+    <form action="" method="post" class="form-exmple">
+        <div>
+            <label for="name">Escribe tu nombre:</label>
+            <input type="text" name="name" id="name" required placeholder="Nombre"/> 
+        </div>
+        <div>
+            <label for="email">Escribe tu E-mail:</label>
+            <input type="text" name="email" id="email" required placeholder="email"/> 
+        </div>
+        <!-- Si quiero agregar una FECHA para una cita 
+        <div>
+            <label for="meeting-time">Elija una fecha para su cita</label>
+            <input type="datetime-local" name="meeting-time" id="meeting-time" value="2023-09-13T19:00"
+            min="2023-01-01T00:00" max="2023-12-30T00:00"/> </div>-->
+           
+            <!-- Atributo PASSWORD 
+            <input type="password" placeholder="ingrese su password" pattern="" /> -->    
+            <!-- Para hacer un formulario de lección de posibilidades datalist -->
+            <label for="recepie-choice">Choose a flavor:</label>
+            <input list="tipo-de-receta" id="recepie-choice" name="recepie-choice" />
+            
+            <datalist id="tipo-de-receta">
+              <option value="Facil"></option>
+              <option value="Media"></option>
+              <option value="Profesional"></option>
+            </datalist>
+<hr>
+            <!-- SUBMIT atributo
+            hay dos formas de hacerlo:
+             <input type= "submit" value= "suscribe" />(es ligero y estático) 
+            <button type= "submit" <p> Enviar />-->
+                <button type= "submit">
+                    <p>Enviar</p> 
+                </button>
+        
+</fieldset>
+</form>
+    </main>
+    <footer>
+        <h4><u>Contacto</u></h4>
+        <ul>
+            <li><a href="mailto:cocinemosjuntos@@hotmail.com" target="_blank">Email</a></li>
+            <li><a href="htttps://cocinemosjuntos.com" target="_blank">Web</a></li>
+        </ul>
+        <a href="../index.html">Home</a>
+    </footer>
+</body>
+</html>

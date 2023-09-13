@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para agregar el favicon (el icono que se ve en la pestaña) -->
+    <link rel="shortcut icon" href="./assets/media/icons/favicon.svg" type="image/x-icon">
+    <title>EJRecetas</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <!-- Para alinear una imagen usar etiqueta div y dentro align -->
+            <div align="center">
+                <img src="./assets/media/images/CocinemosJuntos.jpg" alt="imagen cocinemos juntos" width="150px">
+            </div>
+            <h1 align="center">Cocinemos Juntos</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./pages/faciles.html" > Recetas Fáciles</a>
+                        <a href="./pages/media.html" > Recetas Dificultad Media</a>
+                        <a href="./pages/alta.html" > Recetas Profesionales</a>
+                        <a href="./pages/contacto.html" > Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <hr>
+    </header>
+    <main>
+        <section>
+        <!-- PDF descarga receta -->
+            <marquee behavior="" direction="">
+                <p>No te pierdas nuesto nuevo recetario con todas las recetas nuevas del 2023
+                </p>
+            </marquee>
+            <a href="./assets/media/documentos/RecetasPDF.pdf" target="_blank">
+                <h2 align="center">¡Descargá el recetario!</h2>
+            </a>
+            <hr>
+    </section>
+    <section>
+        <div>
+            <p>
+            <h1>Busca tu tipo de receta</h1>
+            </p>
+        </div>
+        <div>
+            <ol>
+                <li><a href="./pages/faciles.html">Faciles</a></li>
+                <li><a href="./pages/media.html">Media</a></li>
+                <li><a href="./pages/alta.html">Alta</a></li>
+                <li><a href="./index.html#recetas-dia">Recetas del día</a></li>
+            </ol>
+            <hr>
+        </div>
+    </section>
+        <!-- Poner una foto remota 
+    <img src="https://img.freepik.com/vector-gratis/concepto-receta-empanada_52683-39843.jpg" 
+    alt="Recetas del día"> -->
+
+        <!-- Poner una foto local -->
+        <!-- Usar la etiqueta section para colocar cosas por bloques en vez de div -->
+        <!-- Tabla-->
+        <section>
+            <table border="5px">
+                <tbody>
+                    <tr>
+                        <th>
+            <div align="center">
+                <img src="./assets/media/images/concepto-receta-empanada_52683-39843.avif" alt="recetas" width="400px">
+            </div>
+        </th>
+        <th>
+            <h1 align="center">Recetas del Día</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, esse possimus vitae optio blanditiis
+                necessitatibus dignissimos nobis ratione, fugiat perspiciatis dolores impedit unde ex ea! Magni neque
+                accusamus autem dolores?</p>
+            </th>
+            </tr>
+            </tbody>
+            </table>
+        </section>
+        <hr>
+        <!-- Insertar Imagen -->
+        <!--Etiqueta estandarizada <picture> -->
+        <!-- Imagen de base -->
+        <section>
+            <div align="center">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="./assets/media/images/trucha-a-la-crema.webp">
+                    <source media="(min-width: 600px)" srcset="./assets/media/images/ensalada-cesar.jpg">
+                    <img src="./assets/media/images/colombinas-de-pollo.webp" width="400px">
+            </div>
+            </picture>
+            <hr>
+        </section>
+
+        <!-- Enbeber AUDIO -->
+        <!--  
+<audio controls>
+    <source src="ruta del audio"
+</audio>
+-->
+        <!-- Insertar VIDEO LOCAL-->
+        <!-- FALTA INSERTAR VIDEOS!!!! -->
+        <section>
+            <h2 align="center">Video de la Semana</h1>
+                <!-- Insertar VIDEO Local-->
+                <div align="center">
+                    <video controls height="600px">
+                        <source src="./assets/media/video/video receta crepes.mp4">
+                </div>
+                </video>
+                <hr>
+                <div align="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6gnAmAZEXSw?si=pR_Rjv9Ew-6uod92"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <section>
+        <h4><u>Contacto</u></h4>
+        <ul>
+            <li><a href="mailto:cocinemosjuntos@@hotmail.com" target="_blank">Email</a></li>
+            <li><a href="htttps://cocinemosjuntos.com" target="_blank">Web</a></li>
+        </ul>
+    <iframe src="https://www.google.com/maps/d/embed?mid=16yQEPWqog0m6DIDQyNJ_tOKF-_M&hl=en_US&ehbc=2E312F" width="440" height="280"></iframe>
+    </section>
+    </footer>
+</body>
+
+</html>
